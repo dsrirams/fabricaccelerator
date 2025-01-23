@@ -56,9 +56,9 @@ resource fabricCapacity 'Microsoft.Fabric/capacities@2023-11-01' = {
     tier: skuTier
   }
   properties: {
-  //  administration: {
-  //    members: adminUsers
-  //  }
+    administration: {
+      members: 'admin@MngEnvMCAP551350.onmicrosoft.com'
+    }
   }
 }
 
