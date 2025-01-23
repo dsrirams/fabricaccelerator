@@ -21,10 +21,10 @@ param sme_tag string ='sriram@contoso.com'
 param deployment_suffix string = utcNow()
 
 @description('Resource group where Purview will be deployed. Resource group will be created if it doesnt exist')
-param purviewrg string= 'rg-fabricaccelerator'
+param purviewrg string= 'Purview-testing'
 
 @description('Flag to indicate whether to create a new Purview resource with this data platform deployment')
-param create_purview bool = true
+param create_purview bool = false
 
 @description('Flag to indicate whether to enable integration of data platform resources with either an existing or new Purview resource')
 param enable_purview bool = true
@@ -86,7 +86,7 @@ module purview './modules/purview.bicep' = if (create_purview || enable_purview)
     create_purview: create_purview
     purviewrg: purviewrg
     purview_name: purview_name
-    location: purview_rg.location
+    location: 'westus'
     cost_centre_tag: cost_centre_tag
     owner_tag: owner_tag
     sme_tag: sme_tag
