@@ -35,7 +35,7 @@ param skuTier string = 'Fabric'
 
 @description('The list of administrators for the Fabric Capacity instance.')
 //@secure()
-//param adminUsers string = ['admin@MngEnvMCAP551350.onmicrosoft.com', 'sriram@MngEnvMCAP551350.onmicrosoft.com']
+param adminUsers string
 //var adminUsers = ['admin@MngEnvMCAP551350.onmicrosoft.com', 'sdhandapani@microsoft.com']
 
 // Variables
@@ -57,7 +57,7 @@ resource fabricCapacity 'Microsoft.Fabric/capacities@2023-11-01' = {
   }
   properties: {
     administration: {
-      members: ['admin@MngEnvMCAP551350.onmicrosoft.com']
+      members: adminUsers
     }
   }
 }
