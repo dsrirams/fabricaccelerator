@@ -30,7 +30,7 @@ param create_purview bool = false
 param enable_purview bool = true
 
 @description('Resource Name of new or existing Purview Account. Specify a resource name if create_purview=true or enable_purview=true')
-param purview_name string = 'ContosoDG'
+param purview_name string = 'sripurview'
 
 @description('Resource group where audit resources will be deployed. Resource group will be created if it doesnt exist')
 param auditrg string= 'rg-audit'
