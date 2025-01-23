@@ -12,7 +12,7 @@ param rglocation string = 'eastus'
 param cost_centre_tag string = 'MCAPS'
 
 @description('System Owner tag that will be applied to all resources in this deployment')
-param owner_tag string = 'sriram@contoso.com'
+param owner_tag string = 'dsriram@contoso.com'
 
 @description('Subject Matter EXpert (SME) tag that will be applied to all resources in this deployment')
 param sme_tag string ='sriram@contoso.com'
