@@ -139,10 +139,10 @@ module fabric_capacity './modules/fabric-capacity.bicep' = {
     cost_centre_tag: cost_centre_tag
     owner_tag: owner_tag
     sme_tag: sme_tag
-    adminUsers: kv_ref.getSecret('fabric-capacity-admin-username')
+    adminUsers: 'admin@MngEnvMCAP551350.onmicrosoft.com' 
   }
 }
-
+//kv_ref.getSecret('fabric-capacity-admin-username')
 //Deploy SQL control DB 
 module controldb './modules/sqldb.bicep' = {
   name: controldb_deployment_name
