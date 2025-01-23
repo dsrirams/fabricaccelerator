@@ -55,7 +55,7 @@ resource fabricCapacity 'Microsoft.Fabric/capacities@2023-11-01' = {
     name: skuName
     tier: skuTier
   }
-  //properties: {
+  properties: {
   //  administration: {
   //    members: adminUsers
   //  }
